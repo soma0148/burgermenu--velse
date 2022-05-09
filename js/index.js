@@ -1,24 +1,20 @@
-// Lav en variabel, der refererer til ".toggle-btn"
-const btn = document.querySelector(".toggle-btn");
-// Lav en variabel, der refererer til "nav"
+// Lav variablen "btn", der henviser til ".toggle-btn"
+// Lav variablen "nav", der henviser til nav-elementet
 
+// Lav funktionen "toggleMenu()" med følgende funktionalitet
 
-// Lav en function, der hedder toggleMenu()
-function () {
-  // 1. Toggle en klasse på nav vha. classList.toggle
-  // 2. Toggle en klasse, der hedder "shown"
+  // a) toggle klassen "shown" på nav vha. classList.toggle
 
-  // 1. Lav en variabel, der hedder menuShown
-  // 2. Den skal være lig med, om nav-variablen indeholder klassen "shown" vha. classList.contains("")
+  // b) lav variablen "menuShown", som siger, at nav-variablen indeholder klassen "shown" via classList.contains("")
 
-  // 1. Lav en if/else sætning => if (...) {...} else {...}
-  // 2. Spørg om menu i if-sætningen => if (menu)
-  if () {
-    // hvis nav har klassen "shown", sæt da btn.textContent til "Luk"
+  // c) spørg om "menuShown" i if-sætningen nedenfor (=> if (menuShown)), og udskift teksten
+  if (...) {
+    console.log(menuShown); // se i konsollen
+    // sæt btn.textContent til "Luk", hvis menuShown er "true"
   } else {
-    // hvis IKKE nav har klassen "shown", sæt da btn.textContent til "Menu"
+    console.log(menuShown); // se i konsollen
+    // sæt btn.textContent til "Menu", hvis menuShown er "false"
   }
-}
+// "toggleMenu()" slutter her
 
-/* Tilføj et klik-event til btn, der sætter toggleMenu-funktionen i gang */
-btn.addEventListener("click", toggleMenu);
+/* Tilføj et klik-event til "btn", der sætter toggleMenu-funktionen i gang */

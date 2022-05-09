@@ -2,11 +2,15 @@
 .banner {
   background: #5000ca22;
   padding: 2rem;
+
+  /* 1. Få elementerne til at stå ved siden af hinanden og brug justify-content til at skubbe dem væk fra hinanden */
 }
 
 .banner ul {
   list-style: none;
   padding: 0;
+
+  /* 2. Få elementerne til at stå ved siden af hinanden */
 }
 
 /* burgermenu */
