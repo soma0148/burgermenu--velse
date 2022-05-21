@@ -1,11 +1,11 @@
 // Lav variablen "btn", der henviser til ".toggle-btn"
-// Lav variablen "nav", der henviser til nav-elementet
+// Lav variablen "menu", der henviser til ".main-menu"
 
 // Lav funktionen "toggleMenu()" med følgende funktionalitet
 
-  // a) toggle klassen "shown" på nav vha. classList.toggle
+  // a) toggle klassen "shown" på menu vha. classList.toggle
 
-  // b) lav variablen "menuShown", som siger, at nav-variablen indeholder klassen "shown" via classList.contains("")
+  // b) lav variablen "menuShown", som siger, at menu-variablen indeholder klassen "shown" via classList.contains("")
 
   // c) spørg om "menuShown" i if-sætningen nedenfor (=> if (menuShown)), og udskift teksten
   if (...) {
@@ -17,4 +17,4 @@
   }
 // "toggleMenu()" slutter her
 
-/* Tilføj et klik-event til "btn", der sætter toggleMenu-funktionen i gang */
+// Tilføj et klik-event til "btn", der sætter toggleMenu-funktionen i gang

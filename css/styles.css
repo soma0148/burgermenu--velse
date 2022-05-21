@@ -6,7 +6,7 @@
   /* 1. Få elementerne til at stå ved siden af hinanden og brug justify-content til at skubbe dem væk fra hinanden */
 }
 
-.banner ul {
+.main-menu ul {
   list-style: none;
   padding: 0;
 
@@ -15,34 +15,35 @@
 
 /* burgermenu */
 .toggle-btn {
-  display: none;
+  background: transparent;
+  border: none;
+  min-width: 44px;
+  min-height: 44px;
+  font-size: 1.1rem;
+  cursor: pointer;
+
+  display: none; /* Skjul knappen som standard */
 }
 
 @media (max-width: 600px) {
   .toggle-btn {
-    background: transparent;
-    border: none;
-    display: block;
-    min-width: 44px;
-    min-height: 44px;
-    font-size: 1.1rem;
-    cursor: pointer;
+    display: block; /* Vis knappen, når viewporten maksimalt er 600px */
   }
 
-  nav {
-    display: none;
+  .main-menu {
+    display: contents; /* Fjern ".main-menu"-boksen fra ligningen, når viewporten maksimalt er 600px, men behold børnene, så disse deltager i flex-kontekten */
   }
 
-  nav.shown {
+  .main-menu ul {
+    display: none; /* Fjern menu-listen som standard */
+  }
+
+  .main-menu.shown ul {
+    /* Vis menu-listen, når klassen ".shown" er til stede */
     border-top: 1px solid #000;
     padding-top: 1rem;
     display: flex;
     flex: 1 1 100%;
-    flex-flow: column;
-  }
-
-  nav ul {
-    display: flex;
     flex-flow: column;
   }
 }
