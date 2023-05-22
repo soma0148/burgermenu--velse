@@ -4,6 +4,7 @@
   padding: 2rem;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   /* 1. Få elementerne til at stå ved siden af hinanden og brug justify-content til at skubbe dem væk fra hinanden */
 }
@@ -12,6 +13,7 @@
   list-style: none;
   padding: 0;
   display: flex;
+  gap : 1rem;
 
   /* 2. Få elementerne til at stå ved siden af hinanden */
 }
